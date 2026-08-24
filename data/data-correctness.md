@@ -17,8 +17,9 @@ default path is behaviorally stock.
 
 ## 3. Perplexity A/B (end-to-end numerical comparison) — CORRECTED 2026-08-24
 
-**The original run was a null test** (caught by the reporter of issue #25356 while
-reviewing PR #27652 — credit where due). `llama-perplexity` defaults to `-ub 512`,
+**The original run was a null test** (caught by
+[ftoleedo](https://github.com/ftoleedo), reporter of issue #25356, while reviewing
+PR #27652 — credit where due). `llama-perplexity` defaults to `-ub 512`,
 so every dispatch had `ne[1] = 512`, above every legal value of the knob; the MMV
 path was never selected and identical digits were guaranteed regardless of kernel
 behavior. The original rows are preserved at the bottom as a record. The apparent

@@ -92,10 +92,10 @@ a causation costume:
 - Patched binary at default vs stock prebuilt: ±3 % on a pp/tg sanity bench.
 - Perplexity A/B **at a micro-batch inside the dispatch window** (`-ub 12`; the
   default `-ub 512` never selects the MMV path — our first A/B was a null test,
-  caught in PR review): matmul path 6.3148 vs MMV path 6.3130 (±0.284), a ~0.03 %
-  accumulation-order difference far inside the error bar, with the same-kernel
-  control (knob 12 vs 16) identical to every digit
-  (details: [`data/data-correctness.md`](data/data-correctness.md)).
+  caught in PR review by [ftoleedo](https://github.com/ftoleedo)): matmul path
+  6.3148 vs MMV path 6.3130 (±0.284), a ~0.03 % accumulation-order difference far
+  inside the error bar, with the same-kernel control (knob 12 vs 16) identical to
+  every digit (details: [`data/data-correctness.md`](data/data-correctness.md)).
 
 ![Patch performance and verification](media/Patch_Performance_and_Verification_Results.png)
 
