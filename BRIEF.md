@@ -108,10 +108,9 @@ Mistral-Small-24B, one Arc Pro B70, warm, stock (8) vs patched (16):
   https://github.com/ggml-org/llama.cpp/issues/25356
 - CUDA precedent (merged 2026-08-20): https://github.com/ggml-org/llama.cpp/pull/26079
 - Constant's origin: https://github.com/ggml-org/llama.cpp/pull/10991
-- **Our PR: not yet opened.** Sequence: a comment with this data lands on #25356
-  first, then the PR is cut from this patch with title
-  `vulkan : add GGML_VK_MMV_MAX_COLS override for mul_mat_vec dispatch (#25356)`
-  and AI disclosure per CONTRIBUTING.md. The link will be added here once it exists.
+- **Our PR: [ggml-org/llama.cpp#27652](https://github.com/ggml-org/llama.cpp/pull/27652)**
+  — `vulkan : add GGML_VK_MMV_MAX_COLS override for mul_mat_vec dispatch (#25356)`,
+  opened 2026-08-24 with AI disclosure per CONTRIBUTING.md.
 - Companion article: https://steppeintegrations.com/articles/vulkancliff/
 
 ## Provenance

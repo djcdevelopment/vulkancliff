@@ -115,7 +115,7 @@ poisons your numbers. The harnesses in [`harness/`](harness/) enforce all three.
 - CUDA precedent (merged): [#26079 — `GGML_CUDA_MMVQ_MAX`](https://github.com/ggml-org/llama.cpp/pull/26079)
 - Where the constant came from: [#10991](https://github.com/ggml-org/llama.cpp/pull/10991)
 - Article: [The cliff that survived a rebuild](https://steppeintegrations.com/articles/vulkancliff/)
-- **Upstream PR: not yet opened** — link will land here once it's cut.
+- **Upstream PR: [ggml-org/llama.cpp#27652](https://github.com/ggml-org/llama.cpp/pull/27652)** (open)
 
 ## Provenance
 
