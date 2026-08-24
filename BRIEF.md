@@ -79,7 +79,7 @@ Four experiments, one per data file in this folder:
 | Dose-response | [`data/data-dose-response.md`](data/data-dose-response.md) | cliff follows the knob: 4 -> 6, 8 -> 9, 16 -> 24 (first sample past each) |
 | Name-brand roster | [`data/data-roster.md`](data/data-roster.md) | 7 vendors; dense x6.6-6.9 at B=9; MoE gains only its dense share |
 | Frame pacing | [`data/data-frame-pacing.md`](data/data-frame-pacing.md) | 10-concurrent median 204 s -> 38 s per request (x5.4) |
-| Correctness | [`data/data-correctness.md`](data/data-correctness.md) | kernel tests pass; PPL identical to every digit; stock-identical at default |
+| Correctness | [`data/data-correctness.md`](data/data-correctness.md) | kernel tests pass; corrected PPL A/B (ub=12): paths differ ~0.03%, inside SE, control exact; stock-identical at default |
 
 ## The change result (headline numbers)
 
