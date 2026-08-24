@@ -1,0 +1,155 @@
+model,vendor,tag,mmv,ctx,B,S_PP,S_TG,per_thread
+Gemma-3-27B,Google,gemma27,16,24576,1,803.25,23.37,23.37
+Gemma-3-27B,Google,gemma27,16,24576,2,749.36,38.54,19.27
+Gemma-3-27B,Google,gemma27,16,24576,4,747.72,68.33,17.08
+Gemma-3-27B,Google,gemma27,16,24576,6,743.15,91.76,15.29
+Gemma-3-27B,Google,gemma27,16,24576,8,742.97,106.09,13.26
+Gemma-3-27B,Google,gemma27,16,24576,9,737.64,110.34,12.26
+Gemma-3-27B,Google,gemma27,16,24576,10,736.56,115.2,11.52
+Gemma-3-27B,Google,gemma27,16,24576,12,735.68,121.97,10.16
+Gemma-3-27B,Google,gemma27,16,24576,16,735.19,131.42,8.21
+Gemma-3-27B,Google,gemma27,16,24576,24,740.44,69.09,2.88
+Gemma-3-27B,Google,gemma27,16,24576,32,743.08,96.63,3.02
+Gemma-3-27B,Google,gemma27,8,24576,1,808.29,23.34,23.34
+Gemma-3-27B,Google,gemma27,8,24576,2,747.63,38.67,19.34
+Gemma-3-27B,Google,gemma27,8,24576,4,750.16,68.83,17.21
+Gemma-3-27B,Google,gemma27,8,24576,6,746.13,92.04,15.34
+Gemma-3-27B,Google,gemma27,8,24576,8,745.0,106.79,13.35
+Gemma-3-27B,Google,gemma27,8,24576,9,742.12,16.14,1.79
+Gemma-3-27B,Google,gemma27,8,24576,10,755.27,18.33,1.83
+Gemma-3-27B,Google,gemma27,8,24576,12,755.1,23.52,1.96
+Gemma-3-27B,Google,gemma27,8,24576,16,740.71,35.59,2.22
+Gemma-3-27B,Google,gemma27,8,24576,24,746.51,68.92,2.87
+Gemma-3-27B,Google,gemma27,8,24576,32,741.14,96.34,3.01
+gpt-oss-20b,OpenAI,gptoss20,16,65536,1,3019.24,121.86,121.86
+gpt-oss-20b,OpenAI,gptoss20,16,65536,2,3167.92,158.25,79.12
+gpt-oss-20b,OpenAI,gptoss20,16,65536,4,3135.22,200.29,50.07
+gpt-oss-20b,OpenAI,gptoss20,16,65536,6,3124.17,218.23,36.37
+gpt-oss-20b,OpenAI,gptoss20,16,65536,8,3138.0,94.7,11.84
+gpt-oss-20b,OpenAI,gptoss20,16,65536,9,883.23,63.22,7.02
+gpt-oss-20b,OpenAI,gptoss20,16,65536,10,1107.24,67.56,6.76
+gpt-oss-20b,OpenAI,gptoss20,16,65536,12,1126.46,75.83,6.32
+gpt-oss-20b,OpenAI,gptoss20,16,65536,16,1449.9,106.72,6.67
+gpt-oss-20b,OpenAI,gptoss20,16,65536,24,1397.67,97.86,4.08
+gpt-oss-20b,OpenAI,gptoss20,16,65536,32,1075.15,128.1,4.0
+gpt-oss-20b,OpenAI,gptoss20,8,65536,1,428.42,32.82,32.82
+gpt-oss-20b,OpenAI,gptoss20,8,65536,2,829.91,41.89,20.95
+gpt-oss-20b,OpenAI,gptoss20,8,65536,4,1123.02,64.78,16.2
+gpt-oss-20b,OpenAI,gptoss20,8,65536,6,1175.33,77.31,12.88
+gpt-oss-20b,OpenAI,gptoss20,8,65536,8,1028.04,73.58,9.2
+gpt-oss-20b,OpenAI,gptoss20,8,65536,9,1024.33,34.8,3.87
+gpt-oss-20b,OpenAI,gptoss20,8,65536,10,1029.48,37.15,3.71
+gpt-oss-20b,OpenAI,gptoss20,8,65536,12,1261.87,48.4,4.03
+gpt-oss-20b,OpenAI,gptoss20,8,65536,16,1064.57,63.39,3.96
+gpt-oss-20b,OpenAI,gptoss20,8,65536,24,1118.42,109.53,4.56
+gpt-oss-20b,OpenAI,gptoss20,8,65536,32,1347.4,151.44,4.73
+Llama-3.3-70B (2xB70),Meta,llama70,16,32768,1,231.83,5.83,5.83
+Llama-3.3-70B (2xB70),Meta,llama70,16,32768,2,194.36,9.57,4.79
+Llama-3.3-70B (2xB70),Meta,llama70,16,32768,4,219.25,18.09,4.52
+Llama-3.3-70B (2xB70),Meta,llama70,16,32768,6,252.15,26.14,4.36
+Llama-3.3-70B (2xB70),Meta,llama70,16,32768,8,233.26,24.15,3.02
+Llama-3.3-70B (2xB70),Meta,llama70,16,32768,9,205.5,25.36,2.82
+Llama-3.3-70B (2xB70),Meta,llama70,16,32768,10,223.54,25.94,2.59
+Llama-3.3-70B (2xB70),Meta,llama70,16,32768,12,204.86,26.45,2.2
+Llama-3.3-70B (2xB70),Meta,llama70,16,32768,16,198.18,29.87,1.87
+Llama-3.3-70B (2xB70),Meta,llama70,16,32768,24,209.5,17.19,0.72
+Llama-3.3-70B (2xB70),Meta,llama70,16,32768,32,205.54,25.86,0.81
+Llama-3.3-70B (2xB70),Meta,llama70,8,32768,1,296.44,10.73,10.73
+Llama-3.3-70B (2xB70),Meta,llama70,8,32768,2,397.09,16.55,8.28
+Llama-3.3-70B (2xB70),Meta,llama70,8,32768,4,404.34,28.31,7.08
+Llama-3.3-70B (2xB70),Meta,llama70,8,32768,6,402.83,37.2,6.2
+Llama-3.3-70B (2xB70),Meta,llama70,8,32768,8,403.91,43.4,5.42
+Llama-3.3-70B (2xB70),Meta,llama70,8,32768,9,392.26,7.28,0.81
+Llama-3.3-70B (2xB70),Meta,llama70,8,32768,10,404.2,8.31,0.83
+Llama-3.3-70B (2xB70),Meta,llama70,8,32768,12,404.73,10.75,0.9
+Llama-3.3-70B (2xB70),Meta,llama70,8,32768,16,404.81,16.07,1.0
+Llama-3.3-70B (2xB70),Meta,llama70,8,32768,24,404.5,31.48,1.31
+Llama-3.3-70B (2xB70),Meta,llama70,8,32768,32,404.17,48.25,1.51
+Mistral-Small-24B,Mistral,mistral24,16,65536,1,981.1,30.21,30.21
+Mistral-Small-24B,Mistral,mistral24,16,65536,2,906.13,46.61,23.3
+Mistral-Small-24B,Mistral,mistral24,16,65536,4,906.73,77.59,19.4
+Mistral-Small-24B,Mistral,mistral24,16,65536,6,906.02,106.22,17.7
+Mistral-Small-24B,Mistral,mistral24,16,65536,8,904.16,124.69,15.59
+Mistral-Small-24B,Mistral,mistral24,16,65536,9,897.16,130.6,14.51
+Mistral-Small-24B,Mistral,mistral24,16,65536,10,897.77,136.88,13.69
+Mistral-Small-24B,Mistral,mistral24,16,65536,12,894.85,145.9,12.16
+Mistral-Small-24B,Mistral,mistral24,16,65536,16,894.26,158.42,9.9
+Mistral-Small-24B,Mistral,mistral24,16,65536,24,899.18,92.37,3.85
+Mistral-Small-24B,Mistral,mistral24,16,65536,32,903.82,139.93,4.37
+Mistral-Small-24B,Mistral,mistral24,8,65536,1,985.24,30.48,30.48
+Mistral-Small-24B,Mistral,mistral24,8,65536,2,909.68,46.98,23.49
+Mistral-Small-24B,Mistral,mistral24,8,65536,4,917.68,78.38,19.59
+Mistral-Small-24B,Mistral,mistral24,8,65536,6,913.91,106.74,17.79
+Mistral-Small-24B,Mistral,mistral24,8,65536,8,909.34,125.14,15.64
+Mistral-Small-24B,Mistral,mistral24,8,65536,9,905.22,19.72,2.19
+Mistral-Small-24B,Mistral,mistral24,8,65536,10,919.35,22.46,2.25
+Mistral-Small-24B,Mistral,mistral24,8,65536,12,916.65,29.35,2.45
+Mistral-Small-24B,Mistral,mistral24,8,65536,16,903.77,45.42,2.84
+Mistral-Small-24B,Mistral,mistral24,8,65536,24,902.64,91.2,3.8
+Mistral-Small-24B,Mistral,mistral24,8,65536,32,899.46,138.86,4.34
+Qwen3-30B-A3B MoE,Alibaba,moe30,16,65536,1,2278.15,92.21,92.21
+Qwen3-30B-A3B MoE,Alibaba,moe30,16,65536,2,2837.67,128.3,64.15
+Qwen3-30B-A3B MoE,Alibaba,moe30,16,65536,4,2996.74,163.76,40.94
+Qwen3-30B-A3B MoE,Alibaba,moe30,16,65536,6,3014.01,181.52,30.25
+Qwen3-30B-A3B MoE,Alibaba,moe30,16,65536,8,3039.85,219.77,27.47
+Qwen3-30B-A3B MoE,Alibaba,moe30,16,65536,9,2956.12,74.26,8.25
+Qwen3-30B-A3B MoE,Alibaba,moe30,16,65536,10,3043.42,78.79,7.88
+Qwen3-30B-A3B MoE,Alibaba,moe30,16,65536,12,3052.21,87.63,7.3
+Qwen3-30B-A3B MoE,Alibaba,moe30,16,65536,16,3053.74,134.05,8.38
+Qwen3-30B-A3B MoE,Alibaba,moe30,16,65536,24,3035.82,159.81,6.66
+Qwen3-30B-A3B MoE,Alibaba,moe30,16,65536,32,3024.12,199.1,6.22
+Qwen3-30B-A3B MoE,Alibaba,moe30,8,65536,1,276.08,57.35,57.35
+Qwen3-30B-A3B MoE,Alibaba,moe30,8,65536,2,1261.22,106.4,53.2
+Qwen3-30B-A3B MoE,Alibaba,moe30,8,65536,4,1754.3,143.85,35.96
+Qwen3-30B-A3B MoE,Alibaba,moe30,8,65536,6,3027.44,133.26,22.21
+Qwen3-30B-A3B MoE,Alibaba,moe30,8,65536,8,3035.46,150.12,18.77
+Qwen3-30B-A3B MoE,Alibaba,moe30,8,65536,9,2947.89,65.83,7.31
+Qwen3-30B-A3B MoE,Alibaba,moe30,8,65536,10,3038.33,72.14,7.21
+Qwen3-30B-A3B MoE,Alibaba,moe30,8,65536,12,3045.19,85.8,7.15
+Qwen3-30B-A3B MoE,Alibaba,moe30,8,65536,16,3043.56,111.35,6.96
+Qwen3-30B-A3B MoE,Alibaba,moe30,8,65536,24,3038.79,160.52,6.69
+Qwen3-30B-A3B MoE,Alibaba,moe30,8,65536,32,3036.59,199.6,6.24
+Phi-4 14B,Microsoft,phi4,16,65536,1,1525.98,42.93,42.93
+Phi-4 14B,Microsoft,phi4,16,65536,2,1432.13,61.89,30.95
+Phi-4 14B,Microsoft,phi4,16,65536,4,1499.7,112.09,28.02
+Phi-4 14B,Microsoft,phi4,16,65536,6,1436.43,155.01,25.83
+Phi-4 14B,Microsoft,phi4,16,65536,8,1430.26,184.6,23.07
+Phi-4 14B,Microsoft,phi4,16,65536,9,1426.2,195.08,21.68
+Phi-4 14B,Microsoft,phi4,16,65536,10,1422.23,205.68,20.57
+Phi-4 14B,Microsoft,phi4,16,65536,12,1419.34,221.26,18.44
+Phi-4 14B,Microsoft,phi4,16,65536,16,1416.93,240.31,15.02
+Phi-4 14B,Microsoft,phi4,16,65536,24,1415.3,131.18,5.47
+Phi-4 14B,Microsoft,phi4,16,65536,32,1425.82,200.13,6.25
+Phi-4 14B,Microsoft,phi4,8,65536,1,1525.68,42.86,42.86
+Phi-4 14B,Microsoft,phi4,8,65536,2,1436.36,61.74,30.87
+Phi-4 14B,Microsoft,phi4,8,65536,4,1507.33,112.85,28.21
+Phi-4 14B,Microsoft,phi4,8,65536,6,1448.73,155.54,25.92
+Phi-4 14B,Microsoft,phi4,8,65536,8,1436.95,185.89,23.24
+Phi-4 14B,Microsoft,phi4,8,65536,9,1435.84,28.71,3.19
+Phi-4 14B,Microsoft,phi4,8,65536,10,1459.88,32.64,3.26
+Phi-4 14B,Microsoft,phi4,8,65536,12,1449.52,42.74,3.56
+Phi-4 14B,Microsoft,phi4,8,65536,16,1442.26,65.83,4.11
+Phi-4 14B,Microsoft,phi4,8,65536,24,1432.99,131.63,5.48
+Phi-4 14B,Microsoft,phi4,8,65536,32,1428.36,200.93,6.28
+Qwen2.5-32B,Alibaba,qwen32,16,32768,1,670.53,20.56,20.56
+Qwen2.5-32B,Alibaba,qwen32,16,32768,2,624.72,31.27,15.63
+Qwen2.5-32B,Alibaba,qwen32,16,32768,4,622.72,52.08,13.02
+Qwen2.5-32B,Alibaba,qwen32,16,32768,6,618.19,70.97,11.83
+Qwen2.5-32B,Alibaba,qwen32,16,32768,8,616.61,84.21,10.53
+Qwen2.5-32B,Alibaba,qwen32,16,32768,9,617.22,88.13,9.79
+Qwen2.5-32B,Alibaba,qwen32,16,32768,10,614.43,92.52,9.25
+Qwen2.5-32B,Alibaba,qwen32,16,32768,12,615.09,100.82,8.4
+Qwen2.5-32B,Alibaba,qwen32,16,32768,16,619.47,107.99,6.75
+Qwen2.5-32B,Alibaba,qwen32,16,32768,24,618.56,58.45,2.44
+Qwen2.5-32B,Alibaba,qwen32,16,32768,32,622.67,87.19,2.72
+Qwen2.5-32B,Alibaba,qwen32,8,32768,1,663.43,20.5,20.5
+Qwen2.5-32B,Alibaba,qwen32,8,32768,2,621.95,31.21,15.61
+Qwen2.5-32B,Alibaba,qwen32,8,32768,4,618.88,51.69,12.92
+Qwen2.5-32B,Alibaba,qwen32,8,32768,6,614.68,70.62,11.77
+Qwen2.5-32B,Alibaba,qwen32,8,32768,8,614.97,83.96,10.49
+Qwen2.5-32B,Alibaba,qwen32,8,32768,9,614.67,12.81,1.42
+Qwen2.5-32B,Alibaba,qwen32,8,32768,10,619.77,14.57,1.46
+Qwen2.5-32B,Alibaba,qwen32,8,32768,12,622.27,18.96,1.58
+Qwen2.5-32B,Alibaba,qwen32,8,32768,16,617.47,29.09,1.82
+Qwen2.5-32B,Alibaba,qwen32,8,32768,24,617.22,57.47,2.39
+Qwen2.5-32B,Alibaba,qwen32,8,32768,32,617.81,86.19,2.69
