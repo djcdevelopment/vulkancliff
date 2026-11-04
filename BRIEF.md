@@ -1,4 +1,4 @@
-# The Knee: llama.cpp Vulkan's hard-coded 8-thread ceiling, found, proven, and moved
+# The Knee: llama.cpp Vulkan's hard-coded 8-sequence dispatch threshold, found, proven, and moved
 
 *The complete technical brief for this repo. Every number is reproduced in the
 per-dataset files under `data/`; the charts in `charts/` regenerate from `data/raw/`
@@ -22,7 +22,7 @@ multitasking ceiling of exactly 8 concurrent streams on affected GPUs, independe
 host, RAM, card count, or model.
 
 We patched the constant into a runtime knob (`GGML_VK_MMV_MAX_COLS`, default 8 =
-byte-identical stock behavior, clamped 1..16; one file, +24/-3 lines) and proved
+stock dispatch behavior, clamped 1..16; one file, +24/-3 lines) and proved
 causality by dose-response: set the limit to 4/8/16 and the cliff lands at exactly
 4/8/16.
 
@@ -35,7 +35,7 @@ causality by dose-response: set the limit to 4/8/16 and the cliff lands at exact
 - It caps what a local-AI box *is*: how many assistants/agents/users one machine can
   serve at once. Moving 8 -> 16 roughly **doubles the parallel-agent capacity of the
   same silicon** at zero hardware cost.
-- The 9th thread is where every multi-user or multi-agent deployment quietly dies
+- The 9th sequence is where every multi-user or multi-agent deployment quietly dies
   today: aggregate 6x collapse, per-stream rates below human reading speed.
 
 ## What it impacts
@@ -87,11 +87,13 @@ Mistral-Small-24B, one Arc Pro B70, warm, stock (8) vs patched (16):
 
 | measure | stock | patched | gain |
 |---|---|---|---|
-| 9th thread, aggregate | 19.7 tok/s | 131.5 tok/s | **x6.7** |
-| 16 threads, aggregate | 45.4 tok/s | 158.5 tok/s | **x3.5** |
+| 9th sequence, aggregate | 19.7 tok/s | 131.5 tok/s | **x6.7** |
+| 16 sequences, aggregate | 45.4 tok/s | 158.5 tok/s | **x3.5** |
 | 16-on-MMV vs 32-on-matmul | 139.5 (B=32) | 158.5 (B=16) | MMV wins |
 | 10-concurrent request latency (median) | 204 s | 38 s | **x5.4** |
-| per-stream decode at 10 threads | 1.3 tok/s | 5.4 tok/s | x4.2 |
+| per-stream decode at 10 sequences | 1.3 tok/s | 5.4 tok/s | x4.2 |
+
+**This result isn't universal.** On AMD RDNA3.5 with RADV, [an independent test by @ftoleedo](https://github.com/ggml-org/llama.cpp/pull/27652) found the general matmul path beating the fast path by about 42% at B=16, with the best setting at 12. Measure on your own hardware before raising the limit; the patch keeps the default at 8 for this reason.
 
 ## The line of code and the patch
 
