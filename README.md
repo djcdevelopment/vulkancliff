@@ -22,8 +22,8 @@ harnesses that produced it, the charts, and the write-up media. Measured on
 
 Decode batches of ≤8 sequences ride a fast matrix-vector kernel; the 9th falls onto
 a general matmul path and aggregate throughput collapses ~6×. We patched the
-constant into a runtime knob (`GGML_VK_MMV_MAX_COLS`, default 8 = byte-identical
-stock, one file, +24/−3) and proved causality by dose-response — set the limit to
+constant into a runtime knob (`GGML_VK_MMV_MAX_COLS`, default 8 = stock dispatch
+behavior, one file, +24/−3) and proved causality by dose-response — set the limit to
 4 / 8 / 16 and the cliff lands at exactly 4 / 8 / 16:
 
 ![Dose-response: the cliff obeys the knob](charts/dose-response.png)
@@ -38,15 +38,17 @@ Mistral-Small-24B Q4_K_M, one Arc Pro B70, warm reps:
 
 | measure | stock (8) | patched (16) | gain |
 |---|---|---|---|
-| 9th thread, aggregate decode | 19.7 tok/s | 131.5 tok/s | **×6.7** |
-| 16 threads, aggregate decode | 45.4 tok/s | 158.5 tok/s | **×3.5** |
+| 9th sequence, aggregate decode | 19.7 tok/s | 131.5 tok/s | **×6.7** |
+| 16 sequences, aggregate decode | 45.4 tok/s | 158.5 tok/s | **×3.5** |
 | fast path @16 vs matmul @32 | 139.5 (B=32) | 158.5 (B=16) | fast path wins |
 | median request latency, 10 concurrent | 204 s | 38 s | **×5.4** |
 | per-stream decode, 10 concurrent | 1.3 tok/s | 5.4 tok/s | ×4.2 |
 
+**This result isn't universal.** On AMD RDNA3.5 with RADV, [an independent test by @ftoleedo](https://github.com/ggml-org/llama.cpp/pull/27652) found the general matmul path beating the fast path by about 42% at B=16, with the best setting at 12. Measure on your own hardware before raising the limit; the patch keeps the default at 8 for this reason.
+
 It is not one model. Seven models people actually recognize, stock vs patched at
-16 threads — every dense model gains ×3.5–3.7 at B=16 (and ×6.6–6.9 at the 9th
-thread); MoE models gain only their dense-attention share, because their expert
+16 sequences — every dense model gains ×3.5–3.7 at B=16 (and ×6.6–6.9 at the 9th
+sequence); MoE models gain only their dense-attention share, because their expert
 FFNs sit behind a separate dispatch gate (`MUL_MAT_ID`):
 
 ![Seven name-brand models, stock vs patched](charts/roster.png)
